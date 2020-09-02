@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/seventy_dp">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_top_semi_circle" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/homeAppLogo"
+        android:layout_width="@dimen/forty_five_dp"
+        android:layout_height="@dimen/forty_five_dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/brand_icon"
+        android:layout_marginStart="@dimen/fifteen_dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textHomeHeading"
+        android:layout_toEndOf="@id/homeAppLogo"
+        android:layout_toStartOf="@id/homeNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/three_dp"
+        android:layout_marginEnd="@dimen/ten_dp"
+        android:layout_centerVertical="true"
+        android:text="@string/welcome"
+        android:textSize="@dimen/text_twenty_five_sp"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif-black" />
+
+    <FrameLayout
+        android:id="@+id/homeNameText"
+        android:layout_height="@dimen/thirty_dp"
+        android:layout_width="@dimen/thirty_dp"
+        style="@style/ImageAtHomeBar"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@id/homeLogOut">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/imageUserAccountInitial"
+            android:layout_gravity="center"
+            android:src="@drawable/shape_round"/>
+        <TextView
+            android:id="@+id/textInitials"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:ignore="HardcodedText"
+            android:text="SS"
+            android:gravity="center"
+            android:textSize="@dimen/text_sixteen_point_five_sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/homeLogOut"
+        style="@style/ImageAtHomeBar"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_logout"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
+</layout>

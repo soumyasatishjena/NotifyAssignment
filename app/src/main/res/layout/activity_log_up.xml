@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.logup.LogUpActivity">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/twenty_dp"-->
+<!--            android:layout_marginEnd="@dimen/twenty_dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            tools:ignore="UselessParent">-->
+<!--            <TextView-->
+<!--                android:id="@+id/textHeadingLogin"-->
+<!--                style="@style/LoginHeading"-->
+<!--                android:text="Log Up"-->
+<!--                tools:ignore="HardcodedText" />-->
+<!--            <View-->
+<!--                android:layout_below="@id/textHeadingLogin"-->
+<!--                android:id="@+id/viewLogin"-->
+<!--                style="@style/LoginHeadingUserLine" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/layoutRegisterUserName"-->
+<!--                android:layout_below="@id/viewLogin"-->
+<!--                android:layout_marginTop="@dimen/ten_dp"-->
+<!--                style="@style/LayoutPropertyFillData"-->
+<!--                android:hint="Name*"-->
+<!--                app:hintAnimationEnabled="true"-->
+<!--                tools:ignore="HardcodedText,MissingConstraints">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/editRegisterName"-->
+<!--                    style="@style/EditTextLayout"-->
+<!--                    tools:ignore="Autofill,LabelFor" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/layoutRegisterNum"-->
+<!--                android:layout_below="@id/layoutRegisterUserName"-->
+<!--                android:layout_marginTop="@dimen/two_dp"-->
+<!--                style="@style/LayoutPropertyFillData"-->
+<!--                android:hint="Phone Number*"-->
+<!--                app:hintAnimationEnabled="true"-->
+<!--                tools:ignore="HardcodedText,MissingConstraints">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/editRegisterPhoneNumber"-->
+<!--                    style="@style/EditTextLayout"-->
+<!--                    android:inputType="number"-->
+<!--                    android:maxLength="10"-->
+<!--                    tools:ignore="Autofill,LabelFor,TextFields" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+
+<!--                android:id="@+id/layoutEmail"-->
+<!--                android:layout_below="@id/layoutRegisterNum"-->
+<!--                android:layout_marginTop="@dimen/two_dp"-->
+<!--                style="@style/LayoutPropertyFillData"-->
+<!--                android:hint="Email Id*"-->
+<!--                app:hintAnimationEnabled="true"-->
+<!--                tools:ignore="HardcodedText,MissingConstraints">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/editRegisterEmailId"-->
+<!--                    style="@style/EditTextLayout"-->
+<!--                    android:nextFocusUp="@id/editUserEmailId"-->
+<!--                    android:nextFocusLeft="@id/editUserEmailId"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:maxLength="60"-->
+<!--                    tools:ignore="Autofill,LabelFor,TextFields" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/layoutRegisterPassword"-->
+<!--                android:layout_below="@id/layoutEmail"-->
+<!--                android:layout_marginTop="@dimen/two_dp"-->
+<!--                style="@style/LayoutPropertyFillData"-->
+<!--                android:hint="Password*"-->
+<!--                app:hintAnimationEnabled="true"-->
+<!--                app:passwordToggleEnabled="true"-->
+<!--                tools:ignore="HardcodedText">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/editRegisterPassword"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:nextFocusUp="@id/editUserPassword"-->
+<!--                    android:nextFocusLeft="@id/editUserPassword"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:maxLength="15"-->
+<!--                    style="@style/EditTextLayout"-->
+<!--                    tools:ignore="Autofill,HardcodedText,LabelFor" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/layoutRegisterCnfPassword"-->
+<!--                android:layout_below="@id/layoutRegisterPassword"-->
+<!--                android:layout_marginTop="@dimen/two_dp"-->
+<!--                style="@style/LayoutPropertyFillData"-->
+<!--                android:hint="Confirm Password*"-->
+<!--                app:hintAnimationEnabled="true"-->
+<!--                app:passwordToggleEnabled="true"-->
+<!--                tools:ignore="HardcodedText">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/editRegisterCnfPassword"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:nextFocusUp="@id/editUserPassword"-->
+<!--                    android:nextFocusLeft="@id/editUserPassword"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:maxLength="15"-->
+<!--                    style="@style/EditTextLayout"-->
+<!--                    tools:ignore="Autofill,HardcodedText,LabelFor" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_below="@id/layoutRegisterCnfPassword"-->
+<!--                android:id="@+id/textSignUp"-->
+<!--                style="@style/LoginButton"-->
+<!--                android:layout_marginTop="@dimen/thirty_dp"-->
+<!--                android:text="Register"-->
+<!--                tools:ignore="HardcodedText" />-->
+<!--        </RelativeLayout>-->
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBarLogUp"-->
+<!--            style="@style/ProgressBar"/>-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twenty_dp"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/textHeadingLogin"
+                style="@style/LoginHeading"
+                android:text="Log Up"
+                tools:ignore="HardcodedText" />
+            <View
+                android:layout_below="@id/textHeadingLogin"
+                android:id="@+id/viewLogin"
+                style="@style/LoginHeadingUserLine" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutRegisterUserName"
+                android:layout_below="@id/viewLogin"
+                android:layout_marginTop="@dimen/ten_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="First Name*"
+                app:hintAnimationEnabled="true"
+                tools:ignore="HardcodedText,MissingConstraints">
+                <EditText
+                    android:id="@+id/editRegisterName"
+                    style="@style/EditTextLayout"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@+id/layoutRegisterUserName"
+                android:id="@+id/layoutRegisterUserLastName"
+                android:layout_marginTop="@dimen/two_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="Last Name*"
+                app:hintAnimationEnabled="true"
+                tools:ignore="HardcodedText,MissingConstraints">
+                <EditText
+                    android:id="@+id/editRegisterLastName"
+                    style="@style/EditTextLayout"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutRegisterNum"
+                android:layout_below="@id/layoutRegisterUserLastName"
+                android:layout_marginTop="@dimen/two_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="Phone Number*"
+                app:hintAnimationEnabled="true"
+                tools:ignore="HardcodedText,MissingConstraints">
+                <EditText
+                    android:id="@+id/editRegisterPhoneNumber"
+                    style="@style/EditTextLayout"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layoutEmail"
+                android:layout_below="@id/layoutRegisterNum"
+                android:layout_marginTop="@dimen/two_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="Email Id*"
+                app:hintAnimationEnabled="true"
+                tools:ignore="HardcodedText,MissingConstraints">
+                <EditText
+                    android:id="@+id/editRegisterEmailId"
+                    style="@style/EditTextLayout"
+                    android:nextFocusUp="@id/editRegisterEmailId"
+                    android:nextFocusLeft="@id/editRegisterEmailId"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutRegisterPassword"
+                android:layout_below="@id/layoutEmail"
+                android:layout_marginTop="@dimen/two_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="Password*"
+                app:hintAnimationEnabled="true"
+                app:passwordToggleEnabled="true"
+                tools:ignore="HardcodedText">
+                <EditText
+                    android:id="@+id/editRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nextFocusUp="@id/editRegisterPassword"
+                    android:nextFocusLeft="@id/editRegisterPassword"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    style="@style/EditTextLayout"
+                    tools:ignore="Autofill,HardcodedText,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutRegisterCnfPassword"
+                android:layout_below="@id/layoutRegisterPassword"
+                android:layout_marginTop="@dimen/two_dp"
+                style="@style/LayoutPropertyFillData"
+                android:hint="Confirm Password*"
+                app:hintAnimationEnabled="true"
+                app:passwordToggleEnabled="true"
+                tools:ignore="HardcodedText">
+                <EditText
+                    android:id="@+id/editRegisterCnfPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nextFocusUp="@id/editRegisterCnfPassword"
+                    android:nextFocusLeft="@id/editRegisterCnfPassword"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    style="@style/EditTextLayout"
+                    tools:ignore="Autofill,HardcodedText,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:layout_below="@id/layoutRegisterCnfPassword"
+                android:id="@+id/textSignUp"
+                style="@style/LoginButton"
+                android:layout_marginTop="@dimen/thirty_dp"
+                android:text="Register"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBarLogUp"
+            style="@style/ProgressBar"/>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/lightGreen</item>
+        <item name="colorPrimaryDark">@color/lightGreen</item>
+        <item name="colorAccent">@color/lightGreen</item>
+    </style>
+
+    <style name="PromoPage" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/lightGreen</item>
+        <item name="colorPrimaryDark">@color/lightGreen</item>
+        <item name="colorAccent">@color/lightGreen</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ImageAtHomeBar">
+        <item name="android:layout_width">@dimen/twenty_five_dp</item>
+        <item name="android:layout_height">@dimen/twenty_five_dp</item>
+        <item name="android:layout_marginEnd">@dimen/ten_dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="TextViewSmallHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingStart">@dimen/fifteen_dp</item>
+        <item name="android:paddingEnd">@dimen/fifteen_dp</item>
+        <item name="android:paddingTop">@dimen/three_dp</item>
+        <item name="android:paddingBottom">@dimen/three_dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/lightBlue</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/text_fourteen_sp</item>
+    </style>
+
+    <style name="TextViewNumDisplay">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginTop">@dimen/five_dp</item>
+        <item name="android:paddingStart">@dimen/five_dp</item>
+        <item name="android:paddingEnd">@dimen/five_dp</item>
+        <item name="android:text">Story name</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:textSize">@dimen/text_fourteen_sp</item>
+        <item name="android:textColor">@color/blackColour</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="LoginHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_marginStart">@dimen/twenty_dp</item>
+        <item name="android:layout_marginTop">@dimen/eight_dp</item>
+        <item name="android:layout_marginEnd">@dimen/twenty_five_dp</item>
+        <item name="android:paddingStart">@dimen/five_dp</item>
+        <item name="android:paddingEnd">@dimen/five_dp</item>
+        <item name="android:paddingTop">@dimen/three_dp</item>
+        <item name="android:paddingBottom">@dimen/three_dp</item>
+        <item name="android:textSize">@dimen/text_twenty_sp</item>
+        <item name="android:textColor">@color/dotGrey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LoginHeadingUserLine">
+        <item name="android:layout_width">@dimen/fifty_three_dp</item>
+        <item name="android:layout_height">@dimen/three_dp</item>
+        <item name="android:layout_marginStart">@dimen/twenty_eight_dp</item>
+        <item name="android:layout_marginBottom">@dimen/five_dp</item>
+        <item name="android:background">@drawable/shape_heading_bar</item>
+    </style>
+
+    <style name="LoginButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/forty_dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/thirty_dp</item>
+        <item name="android:layout_marginEnd">@dimen/thirty_dp</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_marginBottom">@dimen/twenty_dp</item>
+        <item name="android:background">@drawable/shape_button_background</item>
+        <item name="android:paddingStart">@dimen/twenty_dp</item>
+        <item name="android:paddingEnd">@dimen/twenty_dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.9</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_eighteen_sp</item>
+    </style>
+
+    <style name="LayoutPropertyFillData">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_marginBottom">@dimen/zero_dp</item>
+        <item name="android:layout_marginStart">@dimen/fifteen_dp</item>
+        <item name="android:layout_marginEnd">@dimen/fifteen_dp</item>
+        <item name="android:textSize">@dimen/text_fourteen_sp</item>
+    </style>
+
+    <style name="EditTextLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/forty_dp</item>
+        <item name="android:layout_marginStart">@dimen/five_dp</item>
+        <item name="android:layout_marginEnd">@dimen/five_dp</item>
+        <item name="android:paddingStart">@dimen/five_dp</item>
+        <item name="android:paddingEnd">@dimen/five_dp</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/blue</item>
+        <item name="android:maxLength">100</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:textColorHint">@color/textBlack</item>
+        <item name="android:textColor">@color/dotGrey</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/text_fourteen_sp</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

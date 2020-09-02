@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/topBarHome"
+            layout="@layout/home_top_bar"/>
+        <ProgressBar
+            android:id="@+id/progressBarHome"
+            style="@style/ProgressBar"/>
+        <TextView
+            android:layout_below="@id/topBarHome"
+            android:id="@+id/textAlarm"
+            style="@style/LoginButton"
+            android:layout_marginTop="@dimen/one_hundred_dp"
+            android:text="Alarm Up"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</layout>

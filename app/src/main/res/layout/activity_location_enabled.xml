@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.start.LocationEnabledActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/thirty_two_dp">
+        <ImageView
+            android:id="@+id/imageLoc"
+            android:layout_width="@dimen/one_hundred_dp"
+            android:layout_height="@dimen/one_hundred_dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/one_sixty_dp"
+            android:src="@drawable/ic_placeholder"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textHeading"
+            android:layout_below="@id/imageLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/permission_request"
+            android:textSize="@dimen/text_twenty_four_sp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@id/textHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/thirty_five_dp"
+            android:text="@string/permission"
+            android:textColor="@color/lighterBlack"/>
+
+        <Button
+            android:id="@+id/btnGrantPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:background="@color/lightGreen"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_sixteen_point_five_sp"
+            android:drawableEnd="@drawable/ic_arrow_white"
+            android:text="@string/grant"
+            android:textAllCaps="false"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</layout>
