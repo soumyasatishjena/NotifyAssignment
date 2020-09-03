@@ -27,6 +27,7 @@ public class DatabaseAdapter {
 
 
     public DatabaseAdapter (Context context){
+        this.context = context;
         dataBaseHelper = new DatabaseHelper(context);
     }
 
